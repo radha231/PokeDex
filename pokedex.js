@@ -74,7 +74,7 @@ async function Pokecheck(apiurl1) {
     console.log(data);
     apiurl2 = data.species.url;
     pokeImage.src = data.sprites.other.dream_world.front_default;
-    if (pokeImage.src === "http://127.0.0.1:5500/null") {
+    if (pokeImage.src === "https://radha231.github.io//null") {
         pokeImage.src=data.sprites.front_default
     }
     const ability = data.abilities.map(typeInfo => typeInfo.ability.name).join(', ');
